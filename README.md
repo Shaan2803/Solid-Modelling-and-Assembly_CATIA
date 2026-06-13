@@ -148,7 +148,9 @@ Here is a breakdown of the standard solid modelling workflow for an L-clamp:
 •	A circle is drawn, dimensioned from the edges, and an Extruded Cut (a Boolean subtraction) is performed to remove material, creating the bolt hole.
  
 
- 
+ <img width="1037" height="641" alt="image" src="https://github.com/user-attachments/assets/cc7fc7e5-b90f-4549-8206-9da053e218b3" />
+
+<img width="1039" height="636" alt="image" src="https://github.com/user-attachments/assets/e6b76cd9-377d-4b21-bf58-cc8f497f6fca" />
 
 
 
@@ -171,12 +173,15 @@ The most common approach in software like SolidWorks, Creo, or NX is the "Bottom
 2)	Fix the Base: Apply a "Fixed" constraint to this first component. This locks all of its degrees of freedom (DOF) relative to the origin, ensuring your entire assembly doesn't float away into 3D space when you start mating other parts.
 3)	Insert Subsequent Components: Bring in the secondary parts, such as bolts, washers, or the mating brackets.
 4)	Apply Mates/Constraints: Use geometric relationships to systematically remove the 6 degrees of freedom (3 translational, 3 rotational) from the new components until they are fully defined or possess only the desired movement.
+   
 
 	Moving from an individual part file to a complete assembly is where a design truly comes to life. In mechanical engineering, the assembly environment allows you to define how multiple components—such as securing an L-clamp to a DC motor casing or an electric vehicle chassis—will physically fit, interact, and move.
  
 
   MESHING PROPERTIES
-  
+  <img width="1041" height="733" alt="image" src="https://github.com/user-attachments/assets/64f3091c-0c1f-4dbb-b573-5daff3ee6219" />
+<img width="1064" height="710" alt="image" src="https://github.com/user-attachments/assets/cd9422ae-142d-45af-890c-17380d643495" />
+
 Figure 2: Complete assembly, demonstrating proper alignment and mating conditions
  
 	FINITE ELEMENT ANALYSIS (FEA)
@@ -202,7 +207,9 @@ o	Pro-Tip: Apply Mesh Control (Refinement) specifically at the internal corner o
  
  
 •	STRESS ANALYSIS:
- 
+ <img width="1085" height="587" alt="image" src="https://github.com/user-attachments/assets/7cd67862-e211-4c2e-9b6f-e5439c513ffd" />
+
+<img width="1070" height="623" alt="image" src="https://github.com/user-attachments/assets/a113896b-373b-41a3-843f-dc8fd6794f55" />
 
 
 Figure 3: FEA results displaying stress concentrations under maximum clamping load.
